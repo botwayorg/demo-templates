@@ -1,0 +1,13 @@
+bot:
+  host_service: railway.app
+  lang: csharp
+  name: telegram-csharp
+  package_manager: dotnet
+  start_cmd: dotnet run
+  type: telegram
+docker:
+  cmds:
+    build: docker build -t botway-local/telegram-csharp .
+    run: docker run -it botway-local/telegram-csharp
+  enable_buildkit: true
+  image: botway-local/telegram-csharp

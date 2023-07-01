@@ -1,0 +1,13 @@
+bot:
+  host_service: railway.app
+  lang: kotlin
+  name: telegram-kotlin
+  package_manager: gradle
+  start_cmd: ./gradlew run
+  type: telegram
+docker:
+  cmds:
+    build: docker build -t botway-local/telegram-kotlin .
+    run: docker run -it botway-local/telegram-kotlin
+  enable_buildkit: true
+  image: botway-local/telegram-kotlin

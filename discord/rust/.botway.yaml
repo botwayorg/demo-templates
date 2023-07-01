@@ -1,0 +1,13 @@
+bot:
+  host_service: railway.app
+  lang: rust
+  name: discord-rust
+  package_manager: cargo
+  start_cmd: cargo run src/main.rs
+  type: discord
+docker:
+  cmds:
+    build: docker build -t botway-local/discord-rust .
+    run: docker run -it botway-local/discord-rust
+  enable_buildkit: true
+  image: botway-local/discord-rust

@@ -1,0 +1,13 @@
+bot:
+  host_service: railway.app
+  lang: nodejs
+  name: telegram-nodejs
+  package_manager: npm
+  start_cmd: npm start
+  type: telegram
+docker:
+  cmds:
+    build: docker build -t botway-local/telegram-nodejs .
+    run: docker run -it botway-local/telegram-nodejs
+  enable_buildkit: true
+  image: botway-local/telegram-nodejs

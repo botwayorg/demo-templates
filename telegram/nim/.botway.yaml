@@ -1,0 +1,13 @@
+bot:
+  host_service: railway.app
+  lang: nim
+  name: telegram-nim
+  package_manager: nimble
+  start_cmd: nim c -r src/main.nim
+  type: telegram
+docker:
+  cmds:
+    build: docker build -t botway-local/telegram-nim .
+    run: docker run -it botway-local/telegram-nim
+  enable_buildkit: true
+  image: botway-local/telegram-nim

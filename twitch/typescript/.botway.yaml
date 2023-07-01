@@ -1,0 +1,13 @@
+bot:
+  host_service: railway.app
+  lang: typescript
+  name: twitch-ts
+  package_manager: npm
+  start_cmd: npm start
+  type: twitch
+docker:
+  cmds:
+    build: docker build -t botway-local/twitch-ts .
+    run: docker run -it botway-local/twitch-ts
+  enable_buildkit: true
+  image: botway-local/twitch-ts

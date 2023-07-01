@@ -1,0 +1,13 @@
+bot:
+  host_service: railway.app
+  lang: typescript
+  name: discord-ts
+  package_manager: npm
+  start_cmd: npm start
+  type: discord
+docker:
+  cmds:
+    build: docker build -t botway-local/discord-ts .
+    run: docker run -it botway-local/discord-ts
+  enable_buildkit: true
+  image: botway-local/discord-ts

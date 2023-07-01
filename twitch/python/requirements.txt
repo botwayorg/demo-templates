@@ -1,0 +1,3 @@
+twitchio==2.6.0
+botway.py==0.0.8
+PyYAML==6.0

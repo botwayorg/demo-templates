@@ -1,0 +1,12 @@
+bot:
+  host_service: railway.app
+  lang: c
+  name: discord-c
+  start_cmd: gcc src/main.c -o bot -pthread -ldiscord -lcurl; ./bot
+  type: discord
+docker:
+  cmds:
+    build: docker build -t botway-local/discord-c .
+    run: docker run -it botway-local/discord-c
+  enable_buildkit: true
+  image: botway-local/discord-c

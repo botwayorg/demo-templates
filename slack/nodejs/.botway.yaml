@@ -1,0 +1,13 @@
+bot:
+  host_service: railway.app
+  lang: nodejs
+  name: slack-nodejs
+  package_manager: npm
+  start_cmd: npm start
+  type: slack
+docker:
+  cmds:
+    build: docker build -t botway-local/slack-nodejs .
+    run: docker run -it botway-local/slack-nodejs
+  enable_buildkit: true
+  image: botway-local/slack-nodejs

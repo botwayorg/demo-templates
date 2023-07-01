@@ -1,0 +1,13 @@
+bot:
+  host_service: railway.app
+  lang: typescript
+  name: slack-typescript
+  package_manager: npm
+  start_cmd: npm start
+  type: slack
+docker:
+  cmds:
+    build: docker build -t botway-local/slack-typescript .
+    run: docker run -it botway-local/slack-typescript
+  enable_buildkit: true
+  image: botway-local/slack-typescript

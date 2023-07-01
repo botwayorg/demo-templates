@@ -1,0 +1,13 @@
+bot:
+  host_service: railway.app
+  lang: deno
+  name: telegram-deno
+  package_manager: deno
+  start_cmd: deno task run
+  type: telegram
+docker:
+  cmds:
+    build: docker build -t botway-local/telegram-deno .
+    run: docker run -it botway-local/telegram-deno
+  enable_buildkit: true
+  image: botway-local/telegram-deno

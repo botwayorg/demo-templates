@@ -1,0 +1,13 @@
+bot:
+  host_service: railway.app
+  lang: php
+  name: telegram-php
+  package_manager: composer
+  start_cmd: php src/main.php
+  type: telegram
+docker:
+  cmds:
+    build: docker build -t botway-local/telegram-php .
+    run: docker run -it botway-local/telegram-php
+  enable_buildkit: true
+  image: botway-local/telegram-php

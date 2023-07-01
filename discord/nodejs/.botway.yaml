@@ -1,0 +1,13 @@
+bot:
+  host_service: railway.app
+  lang: nodejs
+  name: discord-nodejs
+  package_manager: npm
+  start_cmd: npm start
+  type: discord
+docker:
+  cmds:
+    build: docker build -t botway-local/discord-nodejs .
+    run: docker run -it botway-local/discord-nodejs
+  enable_buildkit: true
+  image: botway-local/discord-nodejs

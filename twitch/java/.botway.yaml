@@ -1,0 +1,13 @@
+bot:
+  host_service: railway.app
+  lang: java
+  name: twitch-java
+  package_manager: gradle
+  start_cmd: ./gradlew run
+  type: twitch
+docker:
+  cmds:
+    build: docker build -t botway-local/twitch-java .
+    run: docker run -it botway-local/twitch-java
+  enable_buildkit: true
+  image: botway-local/twitch-java

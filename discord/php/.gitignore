@@ -1,0 +1,5 @@
+composer.phar
+/vendor/
+*.lock
+botway-tokens.env
+botway.json

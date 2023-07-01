@@ -1,0 +1,13 @@
+bot:
+  host_service: railway.app
+  lang: cpp
+  name: discord-cpp
+  package_manager: cmake
+  start_cmd: cd build; make -j; ./discord-cpp
+  type: discord
+docker:
+  cmds:
+    build: docker build -t botway-local/discord-cpp .
+    run: docker run -it botway-local/discord-cpp
+  enable_buildkit: true
+  image: botway-local/discord-cpp

@@ -1,0 +1,13 @@
+bot:
+  host_service: railway.app
+  lang: php
+  name: discord-php
+  package_manager: composer
+  start_cmd: php src/main.php
+  type: discord
+docker:
+  cmds:
+    build: docker build -t botway-local/discord-php .
+    run: docker run -it botway-local/discord-php
+  enable_buildkit: true
+  image: botway-local/discord-php

@@ -1,0 +1,13 @@
+bot:
+  host_service: railway.app
+  lang: go
+  name: telegram-go
+  package_manager: go mod
+  start_cmd: go run src/main.go
+  type: telegram
+docker:
+  cmds:
+    build: docker build -t botway-local/telegram-go .
+    run: docker run -it botway-local/telegram-go
+  enable_buildkit: true
+  image: botway-local/telegram-go

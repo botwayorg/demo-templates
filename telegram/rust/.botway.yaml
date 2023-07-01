@@ -1,0 +1,13 @@
+bot:
+  host_service: railway.app
+  lang: rust
+  name: telegram-rust
+  package_manager: cargo
+  start_cmd: cargo run src/main.rs
+  type: telegram
+docker:
+  cmds:
+    build: docker build -t botway-local/telegram-rust .
+    run: docker run -it botway-local/telegram-rust
+  enable_buildkit: true
+  image: botway-local/telegram-rust

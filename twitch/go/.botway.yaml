@@ -1,0 +1,13 @@
+bot:
+  host_service: railway.app
+  lang: go
+  name: twitch-go
+  package_manager: go mod
+  start_cmd: go run src/main.go
+  type: twitch
+docker:
+  cmds:
+    build: docker build -t botway-local/twitch-go .
+    run: docker run -it botway-local/twitch-go
+  enable_buildkit: true
+  image: botway-local/twitch-go

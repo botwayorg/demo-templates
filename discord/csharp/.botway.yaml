@@ -1,0 +1,13 @@
+bot:
+  host_service: railway.app
+  lang: csharp
+  name: discord-csharp
+  package_manager: dotnet
+  start_cmd: dotnet run
+  type: discord
+docker:
+  cmds:
+    build: docker build -t botway-local/discord-csharp .
+    run: docker run -it botway-local/discord-csharp
+  enable_buildkit: true
+  image: botway-local/discord-csharp

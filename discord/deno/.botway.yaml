@@ -1,0 +1,13 @@
+bot:
+  host_service: railway.app
+  lang: deno
+  name: discord-deno
+  package_manager: deno
+  start_cmd: deno task run
+  type: discord
+docker:
+  cmds:
+    build: docker build -t botway-local/discord-deno .
+    run: docker run -it botway-local/discord-deno
+  enable_buildkit: true
+  image: botway-local/discord-deno

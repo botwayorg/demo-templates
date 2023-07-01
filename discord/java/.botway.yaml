@@ -1,0 +1,13 @@
+bot:
+  host_service: railway.app
+  lang: java
+  name: discord-java
+  package_manager: gradle
+  start_cmd: ./gradlew run
+  type: discord
+docker:
+  cmds:
+    build: docker build -t botway-local/discord-java .
+    run: docker run -it botway-local/discord-java
+  enable_buildkit: true
+  image: botway-local/discord-java

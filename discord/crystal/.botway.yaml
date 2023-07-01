@@ -1,0 +1,13 @@
+bot:
+  host_service: railway.app
+  lang: crystal
+  name: discord-crystal
+  package_manager: shards
+  start_cmd: crystal run src/main.cr
+  type: discord
+docker:
+  cmds:
+    build: docker build -t botway-local/discord-crystal .
+    run: docker run -it botway-local/discord-crystal
+  enable_buildkit: true
+  image: botway-local/discord-crystal

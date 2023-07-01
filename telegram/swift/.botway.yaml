@@ -1,0 +1,13 @@
+bot:
+  host_service: railway.app
+  lang: swift
+  name: telegram-swift
+  package_manager: swift
+  start_cmd: swift run
+  type: telegram
+docker:
+  cmds:
+    build: docker build -t botway-local/telegram-swift .
+    run: docker run -it botway-local/telegram-swift
+  enable_buildkit: true
+  image: botway-local/telegram-swift

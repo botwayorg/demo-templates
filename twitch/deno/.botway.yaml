@@ -1,0 +1,13 @@
+bot:
+  host_service: railway.app
+  lang: deno
+  name: twitch-deno
+  package_manager: deno
+  start_cmd: deno task run
+  type: twitch
+docker:
+  cmds:
+    build: docker build -t botway-local/twitch-deno .
+    run: docker run -it botway-local/twitch-deno
+  enable_buildkit: true
+  image: botway-local/twitch-deno

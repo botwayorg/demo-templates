@@ -1,0 +1,13 @@
+bot:
+  host_service: railway.app
+  lang: go
+  name: discord-go
+  package_manager: go mod
+  start_cmd: go run src/main.go
+  type: discord
+docker:
+  cmds:
+    build: docker build -t botway-local/discord-go .
+    run: docker run -it botway-local/discord-go
+  enable_buildkit: true
+  image: botway-local/discord-go

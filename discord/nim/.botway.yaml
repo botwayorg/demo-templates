@@ -1,0 +1,13 @@
+bot:
+  host_service: railway.app
+  lang: nim
+  name: discord-nim
+  package_manager: nimble
+  start_cmd: nim c -r src/main.nim
+  type: discord
+docker:
+  cmds:
+    build: docker build -t botway-local/discord-nim .
+    run: docker run -it botway-local/discord-nim
+  enable_buildkit: true
+  image: botway-local/discord-nim

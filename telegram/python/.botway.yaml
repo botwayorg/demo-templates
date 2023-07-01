@@ -1,0 +1,13 @@
+bot:
+  host_service: railway.app
+  lang: python
+  name: telegram-python
+  package_manager: pip
+  start_cmd: python3 ./src/main.py
+  type: telegram
+docker:
+  cmds:
+    build: docker build -t botway-local/telegram-python .
+    run: docker run -it botway-local/telegram-python
+  enable_buildkit: true
+  image: botway-local/telegram-python

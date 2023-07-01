@@ -1,0 +1,13 @@
+bot:
+  host_service: railway.app
+  lang: dart
+  name: telegram-dart
+  package_manager: pub
+  start_cmd: dart run src/main.dart
+  type: telegram
+docker:
+  cmds:
+    build: docker build -t botway-local/telegram-dart .
+    run: docker run -it botway-local/telegram-dart
+  enable_buildkit: true
+  image: botway-local/telegram-dart

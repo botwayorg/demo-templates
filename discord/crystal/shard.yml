@@ -1,0 +1,14 @@
+name: crystal
+
+version: 0.1.0
+
+dependencies:
+  botwaycr:
+    github: abdfnx/botwaycr
+
+  discordcr:
+    github: shardlab/discordcr
+
+targets:
+  crystal:
+    main: src/main.cr

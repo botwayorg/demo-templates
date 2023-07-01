@@ -1,0 +1,13 @@
+bot:
+  host_service: railway.app
+  lang: cpp
+  name: telegram-cpp
+  package_manager: cmake
+  start_cmd: cd build; make -j; ./telegram-cpp
+  type: telegram
+docker:
+  cmds:
+    build: docker build -t botway-local/telegram-cpp .
+    run: docker run -it botway-local/telegram-cpp
+  enable_buildkit: true
+  image: botway-local/telegram-cpp

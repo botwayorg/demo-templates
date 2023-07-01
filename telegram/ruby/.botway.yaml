@@ -1,0 +1,13 @@
+bot:
+  host_service: railway.app
+  lang: ruby
+  name: telegram-ruby
+  package_manager: bundler
+  start_cmd: bundle exec ruby src/main.rb
+  type: telegram
+docker:
+  cmds:
+    build: docker build -t botway-local/telegram-ruby .
+    run: docker run -it botway-local/telegram-ruby
+  enable_buildkit: true
+  image: botway-local/telegram-ruby
