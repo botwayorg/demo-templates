@@ -1,5 +1,5 @@
 bot:
-  host_service: railway.app
+  host_service: zeabur.com
   lang: deno
   name: twitch-deno
   package_manager: deno

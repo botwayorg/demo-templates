@@ -1,5 +1,5 @@
 bot:
-  host_service: railway.app
+  host_service: zeabur.com
   lang: python
   name: discord-python
   package_manager: pip

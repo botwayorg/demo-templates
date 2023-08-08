@@ -1,5 +1,5 @@
 bot:
-  host_service: railway.app
+  host_service: zeabur.com
   lang: ruby
   name: telegram-ruby
   package_manager: bundler

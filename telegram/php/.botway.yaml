@@ -1,5 +1,5 @@
 bot:
-  host_service: railway.app
+  host_service: zeabur.com
   lang: php
   name: telegram-php
   package_manager: composer

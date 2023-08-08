@@ -22,9 +22,3 @@ botway start
 ```bash
 botway deploy
 ```
-
-- Create a database (Only for bots that have **railway.app** as a host service):
-
-```bash
-botway db add
-```

@@ -1,5 +1,5 @@
 bot:
-  host_service: railway.app
+  host_service: zeabur.com
   lang: c
   name: discord-c
   start_cmd: gcc src/main.c -o bot -pthread -ldiscord -lcurl; ./bot

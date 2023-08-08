@@ -1,5 +1,5 @@
 bot:
-  host_service: railway.app
+  host_service: zeabur.com
   lang: csharp
   name: discord-csharp
   package_manager: dotnet

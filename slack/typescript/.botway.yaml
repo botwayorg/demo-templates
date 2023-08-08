@@ -1,5 +1,5 @@
 bot:
-  host_service: railway.app
+  host_service: zeabur.com
   lang: typescript
   name: slack-typescript
   package_manager: npm
